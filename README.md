@@ -1,2 +1,2 @@
 # classWebsite
-https://aqueous-hollows-44340.herokuapp.com/posts
+https://aqueous-hollows-44340.herokuapp.com/
