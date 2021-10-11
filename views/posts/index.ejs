@@ -1,11 +1,35 @@
 <% layout('layouts/boilerplate') %> 
 
-    <h1>ALL POSTS</h1>
-    <div>
-        <a href="/posts/new">Add Post</a>
+
+<div class="mb-4" style="text-align: center;">
+    <h1 class="mb-0">EECS 370 FEATURES</h1>
+    <p class="text-muted">Numeral System Conversion and Final Grade Calculation</p>
+</div>
+   
+    <div class="card mb-5">
+        <div class="row">
+            <div class="col-md-4" >
+                <img class="img-fluid" alt="" src="https://images.unsplash.com/photo-1605934414604-d4f92e5ed51b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2514&q=80">
+            </div>
+            <div class="col-md-8" >
+                <div class="card-body" style="text-align: center;">
+                    <h5 class="card-title">EECS 370 </h5>
+                    <p class="card-text"> Features to Assist with Numeral System Conversion and Final Grade Calculation</p>
+                    <p class="card-text">
+                        <small class="text-muted">University of Michigan</small>
+                    </p>
+                    <a class="btn btn-primary" href="/eecs">View Features</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="mb-4" style="text-align: center;">
+        <h1 class="mb-0">ALL CLASSES</h1>
+        <p class="text-muted">Class Information and Reviews</p>
     </div>
     <% for (let post of posts){%>
-        <div class="card" mb-3>
+        <div class="card mb-4" >
             <div class="row">
                 <div class="col-md-4">
                     <img class="img-fluid" alt="" src="<%=post.image%>">
@@ -17,7 +41,7 @@
                         <p class="card-text">
                             <small class="text-muted"><%= post.location%></small>
                         </p>
-                        <a class="btn btn-primary" href="/posts/<%=post._id%>">View <%=post.title%></a>
+                        <a class="btn btn-primary" href="/posts/<%=post._id%>">View <%=post.title%> Reviews</a>
                     </div>
                 </div>
             </div>

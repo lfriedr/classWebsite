@@ -1,0 +1,109 @@
+<% layout('layouts/boilerplate') %> 
+<link rel="stylesheet" href="/stylesheets/eecs.css">
+<link rel="stylesheet" href="/stylesheets/stars.css">
+
+<div class="top">
+    <h1>EECS 370</h1>
+    <p class="text-muted mb-5">Numeral System Conversion and Final Grade Calculation</p>
+</div>
+
+<div class="card mb-4 box">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card-body">
+                <h2 class="card-title mb-0">NUMERAL SYSTEM CONVERSION</h2>
+                <p class="card-text"> BINARY / DECIMAL / HEXADECIMAL </p>
+                <section class="cnvrtSelects">
+                    <span> Convert: </span>
+                    <select name="" id="radixSelect1">
+                        <option value="Binary">Binary</option>
+                        <option value="Hexadecimal">Hexadecimal</option>
+                        <option value="Decimal">Decimal</option>
+                    </select>
+                </section>
+            
+                <section class="cnvrtSelects">
+                    <span> To: </span>
+                        <select name="" id="radixSelect2">
+                            <option value="Binary">Binary</option>
+                            <option value="Hexadecimal">Hexadecimal</option>
+                            <option value="Decimal">Decimal</option>
+                        </select>
+                </section>
+            
+                <form action="" id="numForm" class="cnvrtOuts">
+                    <label for="number">Enter a Number:</label>
+                    <input type="text" name="numInput" placeholder="NUMBER" id="number">
+                    <button>Convert</button>
+                </form>
+            
+                <label for="answerBox" class="cnvrtOuts">Answer:</label>
+                <input type="text" name="answerBox" placeholder="ANSWER" id="answerBox" readonly>
+            
+                <section class="hide" id="twosInfo">
+                    <label for="twosBox" class="cnvrtOuts">Two's Complement:</label>
+                    <input type="text" name="twosBox" placeholder="TWO'S COMPLEMENT" id="twosBox" readonly>
+                </section>
+            
+            </div>
+        </div>
+    </div>
+</div>
+<div class="card mb-5 box">
+    <div class="card-body">
+        <form action="" id="finForm">
+            <div class="row">
+                <h2 class="card-title mb-0">FINAL GRADE CALCULATOR</h2>
+                <p class="card-text"> Enter score for each section to compute final course grade!</p>
+                <div class="col-md-6">
+                    <section class='gradeInputs'>
+                        <label for="proj1">Enter Project 1 Grade:</label>
+                        <input type="number" name="proj1" placeholder="PROJECT 1" id="proj1" class="scoreIn">
+                    </section>
+                    <section class='gradeInputs'>
+                        <label for="proj2">Enter Project 2 Grade:</label>
+                        <input type="number" name="proj2" placeholder="PROJECT 2" id="proj2" class="scoreIn">
+                    </section>
+                    <section class='gradeInputs'>
+                        <label for="proj3">Enter Project 3 Grade:</label>
+                        <input type="number" name="proj3" placeholder="PROJECT 3" id="proj3" class="scoreIn">
+                    </section>
+                    <section class='gradeInputs'>
+                        <label for="proj4">Enter Project 4 Grade:</label>
+                        <input type="number" name="proj4" placeholder="PROJECT 4" id="proj4" class="scoreIn">
+                    </section>
+                    <section class='gradeInputs'>
+                        <label for="hw">Enter Homework Grade:</label>
+                        <input type="number" name="hw" placeholder="HW" id="hw" class="scoreIn">
+                    </section>
+                </div>
+                <div class="col-md-6">
+                    <section class='gradeInputs'>
+                        <label for="quiz">Enter Quiz Grade:</label>
+                        <input type="number" name="quiz" placeholder="QUIZ" id="quiz" class="scoreIn">
+                    </section>
+                    <section class="gradeInputs">
+                        <label for="disc">Enter Discussion Grade:</label>
+                        <input type="number" name="disc" placeholder="DISCUSSION" id="disc" class="scoreIn">
+                    </section>
+                    <section class="gradeInputs">
+                        <label for="midterm">Enter Midterm Grade:</label>
+                        <input type="number" name="midterm" placeholder="MIDTERM" id="midterm" class="scoreIn">
+                    </section>
+                    <section class="gradeInputs">
+                        <label for="finalExam">Enter Final Exam Grade:</label>
+                        <input type="number" name="finalExam" placeholder="FINAL EXAM" id="finalExam" class="scoreIn">
+                </div>
+            </div>
+            <div>
+                <section>
+                    <button class="mb-3">CALCULATE</button>
+                </section>
+                <label for="finalGrade">FINAL GRADE:</label>
+                <input type="number" name="finalGrade" placeholder="FINAL GRADE" id="finalGrade" readonly>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="/js/eecs.js"></script>
